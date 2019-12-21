@@ -949,6 +949,9 @@
 
 
 
+<script type='text/javascript'>var index=0;var colorIndex=0;$(document).ready(function(){$('body').click(function(e){var arr=new Array('富强','民主','文明','和谐','自由','平等','公正','法治','爱国','敬业','诚信','友善');var colorArr=new Array('red','orange','yellow','green','blue','indigo','purple');var tmp=$('<span/>').text(arr[index]);index=(index+1)%arr.length;var color=colorArr[colorIndex];colorIndex=(colorIndex+1)%colorArr.length;var x=e.pageX,y=e.pageY;tmp.css({'z-index':999,'top':y-20,'left':x,'position':'absolute','font-weight':'bold','color':color,'font-size':20});$('body').append(tmp);tmp.animate({'top':y-200,'opacity':0},2000,function(){tmp.remove()})})});</script>
+
+
   <script>setLoadingBarProgress(100);</script>
 </body>
 </html>
